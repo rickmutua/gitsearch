@@ -1,4 +1,4 @@
-  var Search = require('./../js/display.js').searchModule;
+var Search = require('./../js/display.js').searchModule;
 
 $('Button') .click(function () {
   $('#hiddenBody') .show();
@@ -12,7 +12,7 @@ $('Button') .click(function () {
 
 
   $(document).ready(function() {
-    $('#search').submit(function(event){
+    $('#searchBar').submit(function(event){
       event.preventDefault();
       var userName = $('#search').val();
       console.log(userName);

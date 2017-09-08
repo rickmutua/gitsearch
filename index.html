@@ -1,103 +1,78 @@
 <!DOCTYPE html>
-
 <html>
-
   <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-          <!--custom css-->
-    <link href="scss/styles.css" rel="stylesheet" type="text/css">
-
-    <!--custom bootstrap css -->
-   <link href="scss/bootstrap.css" rel="stylesheet">
-   <link href="scss/bootstrap.min.css" rel="stylesheet">
-
-          <!--other links/scripts-->
-          <link rel="stylesheet" href="build/css/vendor.css">
-          <link rel="stylesheet" href="build/css/styles.css">
-          <script src="build/js/vendor.min.js"></script>
-          <script type="text/javascript" src="build/js/app.js"></script>
-
-
-    <title></title>
-
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script></script>
+    <title>Github User Lookup</title>
   </head>
-
-
   <body>
 
+      <h1 style="text-align: center;">Github User Lookup</h1>
 
-  <div id="landingPage">
+    <div class="container">
 
-    <h1>GITHUB USER LOOK-UP</h1>
+      <div class="searchDiv">
 
-    <div id="search">
+        <form id = "searchBar">
 
-      <form class="search" action="index.html" method="post">
+          <label for="search">Enter Github Username</label>
+          <input type="text" name="search" id="search"> <br>
+          <button type="submit" class="btn-default" style="margin-top: 5px;">Search</button>
 
-        <input type="text" id="" name="search" value="" placeholder="Github User Name"> <br> <br>
-
-        <button type="button" class="btn-default" id="searchButton"> Search </button>
-
-      </form>
-
-    </div>
-
-  </div>
-
-    <div id="error">
-      <p>Sorry, user not found!</p>
-    </div>
-
-
-  <div id="hiddenBody">
-
-    <div class="row">
-
-      <div class="col-md-5">
-
-        <div id="user-profile">
-
-          <img src="" alt="No Picture Found" id="profilePicture">
-
-          <p id="userName"></p>
-
-          <p id="name"></p>
-
-          <a href="#" id="githubLink"> Github Link</a>
-
-          <p id="email"></p>
-
-          <p id="company"></p>
-
-          <p id="location"></p>
-
-          <p id="follow"></p>
-
-        </div>
+        </form>
 
       </div>
 
-      <div class="col-md-6 col-md-offset-1">
 
-          <div id="repoPanel">
+      <div id="failure">
+        <h3>Sorry, we couldn't find that user!</h3>
+      </div>
 
-            <a href="#" id="repoLink"> <h3> Repositories </h3> </a>
+      <div class="row">
 
-            <ol id="repos">
+        <div class="col-md-5">
+
+          <div id="userPanel">
+
+            <h3 id="userName"></h3>
+
+            <img id="avatar" src="" alt="Cannot display profile picture" /><br>
+
+            <h4 id="name"></h4>
+
+            <a id="githubLink" href="#">Github URL</a>
+
+            <h4 id="bio"></h4>
+
+            <h4 id="company"></h4>
+
+            <h4 id="location"></h4>
+
+            <h4 id="follow"></h4>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 col-md-offset-1">
+
+          <div id="repositoryPanel">
+
+            <a id="reposLink" href="#"><h1>Repositories</h1></a>
+
+            <p>The first 100 repositories are listed here. To view the rest, click the link above!</p>
+
+            <ol id="allRepositories">
 
             </ol>
 
           </div>
+        </div>
 
       </div>
 
     </div>
 
-
   </body>
-
 </html>
