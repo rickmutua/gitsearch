@@ -2,9 +2,7 @@
   "name": "user-lookup",
   "description": "",
   "main": "index.js",
-  "authors": [
-    "Blake Scala <blakescala@gmail.com>"
-  ],
+  "authors": [],
   "license": "ISC",
   "homepage": "",
   "ignore": [
