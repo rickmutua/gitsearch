@@ -25,4 +25,4 @@ HTML, CSS, Javascript, jQuery, Sass, Node, Bower
 
 * ISC
 
-Copyright (c) 2016 **_Erick Mutua_**
+Copyright (c) 2017 **_Erick Mutua_**
