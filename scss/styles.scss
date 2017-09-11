@@ -13,6 +13,19 @@ body {
   background-image: url('back.jpg');
 }
 
+#searchbtn {
+  border-radius: 5px;
+  color: orange;
+  background-color: black;
+  width: 100px;
+}
+
+#search {
+  border-radius: 5px;
+  border-color: orange;
+  width: 300px;
+}
+
 #userPanel, {
   display: none;
   margin-top: 20px;
