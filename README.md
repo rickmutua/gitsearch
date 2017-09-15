@@ -23,6 +23,6 @@ HTML, CSS, Javascript, jQuery, Sass, Node, Bower
 
 ## Licensing
 
-* ISC
+* MIT
 
 Copyright (c) 2017 **_Erick Mutua_**
